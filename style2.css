@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Frijole', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(nft/astronaut2.png);
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.hero-btn2{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 13px 70px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 20px;
+    text-decoration: none;
+}
+.hero-btn2:hover{
+    border: 1px solid gold;
+    background: gold;
+    transition: 1s;
+}
+/*------ course ------*/
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #00c3ff;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.course{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(nft/DONUTBOX12.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+    margin: 10px 0 40px;
+}
+.row{
+    margin: 5%;
+    display:flex;
+    justify-content:center;
+    
+}
+.course-col{
+    flex-basis: 10%;
+    bottom: 40%;
+    color: white;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    position: center;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0,2);
+}
+.course video{
+    position: center;
+    top: 40px;
+    left: 20px;
+    width: 50%;
+}
